@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ProjectileInversionText>弹反!</ProjectileInversionText>
+
+  <YourPawnGainProjectileInversionTraitMsg>{0} 获得了 {1} 特性!他现在可以弹反子弹了!</YourPawnGainProjectileInversionTraitMsg>
+
+    <ProjectileInversionCategory>弹反</ProjectileInversionCategory>
+  
+  <ProjectileInversionSettingSpeedLabel>弹射物最大速度</ProjectileInversionSettingSpeedLabel>
+
+  <ProjectileInversionSettingSpeedDesc>如果弹射物速度超过这个值，你就无法弹反.（默认200）</ProjectileInversionSettingSpeedDesc>
+  
+  <ProjectileInversionSettingShowTextLabel>弹反文字提示</ProjectileInversionSettingShowTextLabel>
+  
+  <ProjectileInversionSettingShowTextDesc>如果开启，当你弹反是会蹦出一个文字提示.(默认:开启)</ProjectileInversionSettingShowTextDesc>
+</LanguageData>
