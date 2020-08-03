@@ -1,26 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Rebound (Continued)</name>
-  	<packageId>Mlie.Rebound</packageId>
-	<author>AKreedz</author>
-	<url>https://github.com/emipa606/Rebound</url>
-	<supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies>
-		<li>
-			<packageId>brrainz.harmony</packageId>
-            <displayName>Harmony</displayName>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-		</li>
-	</modDependencies>
-	<loadAfter>	
-		<li>brrainz.harmony</li>
-	</loadAfter>
-	<description>Update of AKreedz mod for RimWorld 1.1
-https://steamcommunity.com/sharedfiles/filedetails/?id=1812077718
+  <packageId>Mlie.Rebound</packageId>
+  <author>AKreedz</author>
+  <url>https://github.com/emipa606/Rebound</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <incompatibleWith>
+    <li>Mlie.ReboundCE</li>
+  </incompatibleWith>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>Update of AKreedz mod for RimWorld 1.1
+https://steamcommunity.com/sharedfiles/filedetails/?id=1692393812
 
 [img]https://i.imgur.com/GYswkZ7.png[/img]
 
@@ -29,6 +33,18 @@ https://invite.gg/mlie
 
 Non-steam version:
 https://github.com/emipa606/Rebound
+
+A brief explanation of the mod as I understand it:
+ - New trait: Sword Master, low natural chance but automatically added when pawn has 20 in Melee
+ - Bullets can be rebounded as long as pawn has a Melee-weapon, but player-pawns must be drafted.
+ - Rebound-chance 0.5 * [Manipulation value, max 100%] * (Melee-skill / 10)
+	* Example - Manipulation-value: 105%, Melee-skill: 18
+		0.5 * 1 * 1.8 = 0.9 = 90% chance
+ - Only projectiles that would have hit the pawn can be rebounded
+ - Weapon has a chance to take durability-damage when rebounding
+	0.4 * (Melee-skill/5)
+ - At 1 durability the weapon is thrown to the ground to avoid getting destroyed
+ - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
 	
 --- Original Description ---
 For those who came in due to the steam name being in english, but no english description, here is a google translate for you. (By Umbreonic Wizard )
@@ -41,10 +57,10 @@ Bullet counter condition:
 In the recruitment of colonists, armed with melee weapons (non-colonials do not need to be recruited)
 
 Projection counter probability calculation:
-Bomb anti- chance = 50% x colonizer operation ability (up to 100%) x (colonial combat level ÷ 10)
+Bomb anti- chance = 50% x colonizer operation ability (up to 100%) x (colonial combat level � 10)
 
 Weapon damage probability calculation:
-Damaged chance = 40% ÷ (colonial combat level ÷ 5);
+Damaged chance = 40% � (colonial combat level � 5);
 Every time the damaged weapon is lowered 1 Durable
 Weapons are automatically thrown to the ground when they reach 1</description>
 </ModMetaData>

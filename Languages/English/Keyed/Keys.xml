@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ProjectileInversionText>Rebound!</ProjectileInversionText>
-
   <YourPawnGainProjectileInversionTraitMsg>{0} gained the trait : {1} !You can rebound projectiles now!</YourPawnGainProjectileInversionTraitMsg>
-  
-  
   <ProjectileInversionCategory>Projectile Inversion</ProjectileInversionCategory>
-  
   <ProjectileInversionSettingSpeedLabel>Max Projectile Speed</ProjectileInversionSettingSpeedLabel>
-
   <ProjectileInversionSettingSpeedDesc>You can't rebound the projectile if the speed of the projectile exceed this value.(default:200)</ProjectileInversionSettingSpeedDesc>
-  
   <ProjectileInversionSettingShowTextLabel>Show Rebound Text</ProjectileInversionSettingShowTextLabel>
-  
   <ProjectileInversionSettingShowTextDesc>If true,it will throw a text mote when you rebound projectile.(default:true)</ProjectileInversionSettingShowTextDesc>
+
 </LanguageData>
