@@ -7,5 +7,4 @@
   <ProjectileInversionSettingSpeedDesc>You can't rebound the projectile if the speed of the projectile exceed this value.(default:200)</ProjectileInversionSettingSpeedDesc>
   <ProjectileInversionSettingShowTextLabel>Show Rebound Text</ProjectileInversionSettingShowTextLabel>
   <ProjectileInversionSettingShowTextDesc>If true,it will throw a text mote when you rebound projectile.(default:true)</ProjectileInversionSettingShowTextDesc>
-
 </LanguageData>
