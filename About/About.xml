@@ -22,6 +22,7 @@
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
+    <li>syrchalis.traitvalue</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of AKreedz mod
@@ -38,6 +39,7 @@ A brief explanation of the mod as I understand it:
 	0.4 * (Melee-skill/5)
  - At 1 durability the weapon is thrown to the ground to avoid getting destroyed
  - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
+- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -77,6 +79,6 @@ Weapons are automatically thrown to the ground when they reach 1
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>
-
