@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ProjectileInversionText>反彈!</ProjectileInversionText>
+  <YourPawnGainProjectileInversionTraitMsg>{0}獲得了特質 : {1} !你現在可以反彈子彈！</YourPawnGainProjectileInversionTraitMsg>
+  <ProjectileInversionCategory>反彈</ProjectileInversionCategory>
+  <ProjectileInversionSettingSpeedLabel>最大物體射速</ProjectileInversionSettingSpeedLabel>
+  <ProjectileInversionSettingSpeedDesc>如果射速超過此值，則無法反彈。(默認：200)</ProjectileInversionSettingSpeedDesc>
+  <ProjectileInversionSettingShowTextLabel>顯示提示</ProjectileInversionSettingShowTextLabel>
+  <ProjectileInversionSettingShowTextDesc>如果開啟，它將在反彈成功時彈出提示。(默認：開啟)</ProjectileInversionSettingShowTextDesc>
+
+</LanguageData>
