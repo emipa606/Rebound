@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.0.7.0 - Forgot the CE-logo
+
+
 1.0.6.0 - Added CE-support
 
 
