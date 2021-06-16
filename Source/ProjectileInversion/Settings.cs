@@ -3,17 +3,13 @@ using Verse;
 
 namespace ProjectileInversion
 {
-    // Token: 0x02000006 RID: 6
     public class Settings : ModSettings
     {
-        // Token: 0x04000001 RID: 1
         public static int speed = 200;
 
-        // Token: 0x04000002 RID: 2
         public static bool showText = true;
         public static bool noRebound;
 
-        // Token: 0x06000010 RID: 16 RVA: 0x00002724 File Offset: 0x00000924
         public static void DoSettingsWindowContents(Rect rect)
         {
             var listing_Standard = new Listing_Standard(GameFont.Small) {ColumnWidth = rect.width};
@@ -28,7 +24,6 @@ namespace ProjectileInversion
             listing_Standard.End();
         }
 
-        // Token: 0x06000011 RID: 17 RVA: 0x000027CB File Offset: 0x000009CB
         public override void ExposeData()
         {
             Scribe_Values.Look(ref speed, "PISpeed", 200);

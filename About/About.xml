@@ -9,9 +9,6 @@
     <li>1.1</li>
     <li>1.2</li>
   </supportedVersions>
-  <incompatibleWith>
-    <li>Mlie.ReboundCE</li>
-  </incompatibleWith>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
@@ -23,6 +20,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
     <li>syrchalis.traitvalue</li>
+    <li>CETeam.CombatExtended</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of AKreedz mod
@@ -41,6 +39,7 @@ A brief explanation of the mod as I understand it:
  - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 - Traditional Chinese translation added, thanks shiuanyue!
+- Added a setting to just block the projectiles
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 

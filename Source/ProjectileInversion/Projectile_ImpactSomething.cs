@@ -1,18 +1,13 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using Verse;
 using Verse.Sound;
 
 namespace ProjectileInversion
 {
-    // Token: 0x02000003 RID: 3
-    [HarmonyPatch(typeof(Projectile), "ImpactSomething", new Type[]
+    [HarmonyPatch(typeof(Projectile), "ImpactSomething")]
+    public static class Projectile_ImpactSomething
     {
-    })]
-    public static class Harmony_Inversion
-    {
-        // Token: 0x0600000B RID: 11 RVA: 0x000023A0 File Offset: 0x000005A0
         public static bool Prefix(Projectile __instance)
         {
             var traverse = Traverse.Create(__instance);
@@ -47,13 +42,6 @@ namespace ProjectileInversion
             var value2 = Traverse.Create(pawn).Field("drawer").GetValue<Pawn_DrawTracker>();
             value2.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
             var showText = Settings.showText;
-            if (showText)
-            {
-                MoteMaker.ThrowText(pawn.Position.ToVector3(), pawn.Map,
-                    Settings.noRebound
-                        ? "ProjectileInversionBlockText".Translate()
-                        : "ProjectileInversionText".Translate());
-            }
 
             ThingWithComps thingWithComps = null;
             if (pawn.equipment?.Primary != null)
@@ -69,6 +57,18 @@ namespace ProjectileInversion
                 var projectileHitFlags = ProjectileHitFlags.All;
                 projectile.Launch(pawn, pawn.Position.ToVector3(), value.Position, value,
                     projectileHitFlags, thingWithComps);
+                if (showText)
+                {
+                    MoteMaker.ThrowText(pawn.Position.ToVector3(), pawn.Map, "ProjectileInversionText".Translate());
+                }
+            }
+            else
+            {
+                if (showText)
+                {
+                    MoteMaker.ThrowText(pawn.Position.ToVector3(), pawn.Map,
+                        "ProjectileInversionBlockText".Translate());
+                }
             }
 
             API.damageWeapon(pawn);

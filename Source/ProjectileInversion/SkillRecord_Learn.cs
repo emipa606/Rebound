@@ -4,11 +4,9 @@ using Verse;
 
 namespace ProjectileInversion
 {
-    // Token: 0x02000004 RID: 4
     [HarmonyPatch(typeof(SkillRecord), "Learn", typeof(float), typeof(bool))]
-    public static class Harmony_GainTrait
+    public static class SkillRecord_Learn
     {
-        // Token: 0x0600000C RID: 12 RVA: 0x00002610 File Offset: 0x00000810
         public static void Postfix(SkillRecord __instance)
         {
             var traverse = Traverse.Create(__instance);

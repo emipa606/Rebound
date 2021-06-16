@@ -18,6 +18,7 @@ A brief explanation of the mod as I understand it:
  - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 - Traditional Chinese translation added, thanks shiuanyue!
+- Added a setting to just block the projectiles
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
