@@ -11,6 +11,7 @@ namespace ProjectileInversion
 
         // Token: 0x04000002 RID: 2
         public static bool showText = true;
+        public static bool noRebound;
 
         // Token: 0x06000010 RID: 16 RVA: 0x00002724 File Offset: 0x00000924
         public static void DoSettingsWindowContents(Rect rect)
@@ -22,6 +23,8 @@ namespace ProjectileInversion
             speed = (int) listing_Standard.Slider(speed, 1f, 999f);
             listing_Standard.CheckboxLabeled("ProjectileInversionSettingShowTextLabel".Translate(), ref showText,
                 "ProjectileInversionSettingShowTextDesc".Translate());
+            listing_Standard.CheckboxLabeled("ProjectileInversionSettingNoReboundLabel".Translate(), ref noRebound,
+                "ProjectileInversionSettingNoReboundDesc".Translate());
             listing_Standard.End();
         }
 
@@ -30,6 +33,7 @@ namespace ProjectileInversion
         {
             Scribe_Values.Look(ref speed, "PISpeed", 200);
             Scribe_Values.Look(ref showText, "PIShowText", true);
+            Scribe_Values.Look(ref noRebound, "PINoRebound");
         }
     }
 }

@@ -50,7 +50,9 @@ namespace ProjectileInversion
             if (showText)
             {
                 MoteMaker.ThrowText(pawn.Position.ToVector3(), pawn.Map,
-                    "ProjectileInversionText".Translate());
+                    Settings.noRebound
+                        ? "ProjectileInversionBlockText".Translate()
+                        : "ProjectileInversionText".Translate());
             }
 
             ThingWithComps thingWithComps = null;
@@ -61,7 +63,7 @@ namespace ProjectileInversion
 
             pawn.skills.Learn(SkillDefOf.Melee, 200f);
             __instance.Destroy();
-            if (value != null && pawn.Faction.HostileTo(value.Faction))
+            if (!Settings.noRebound && value != null && pawn.Faction.HostileTo(value.Faction))
             {
                 var projectile = (Projectile) GenSpawn.Spawn(def, pawn.Position, pawn.Map);
                 var projectileHitFlags = ProjectileHitFlags.All;

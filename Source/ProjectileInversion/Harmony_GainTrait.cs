@@ -34,7 +34,7 @@ namespace ProjectileInversion
             {
                 Messages.Message(
                     "YourPawnGainProjectileInversionTraitMsg".Translate(value.Label,
-                        TraitDef.Named("ProjectileInversion_Trait").degreeDatas.RandomElement().label.Translate()),
+                        TraitDef.Named("ProjectileInversion_Trait").degreeDatas.RandomElement().label),
                     value, MessageTypeDefOf.PositiveEvent);
             }
         }

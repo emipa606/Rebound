@@ -17,6 +17,7 @@ A brief explanation of the mod as I understand it:
  - At 1 durability the weapon is thrown to the ground to avoid getting destroyed
  - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
+- Traditional Chinese translation added, thanks shiuanyue!
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
