@@ -32,9 +32,8 @@ namespace ProjectileInversion
 
         private static bool hasWeapon(Pawn pawn)
         {
-            var flag = pawn.equipment.Primary == null || !pawn.equipment.Primary.def.IsMeleeWeapon ||
-                       pawn.equipment.Primary.IsBrokenDown();
-            return !flag;
+            return !(pawn.equipment.Primary == null || !pawn.equipment.Primary.def.IsMeleeWeapon ||
+                     pawn.equipment.Primary.IsBrokenDown());
         }
 
         private static bool randomCheck(float chance)

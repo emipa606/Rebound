@@ -37,7 +37,7 @@ namespace ProjectileInversion
             var value = traverse.Field("launcher").GetValue<Thing>();
             var def = __instance.def;
             GenClamor.DoClamor(pawn, 2.1f, ClamorDefOf.Impact);
-            MoteMaker.MakeStaticMote(pawn.Position, pawn.Map, ThingDef.Named("Mote_SparkFlash"));
+            FleckMaker.Static(pawn.Position, pawn.Map, FleckDefOf.ShotFlash);
             SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
             var value2 = Traverse.Create(pawn).Field("drawer").GetValue<Pawn_DrawTracker>();
             value2.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
@@ -54,9 +54,9 @@ namespace ProjectileInversion
             if (!Settings.noRebound && value != null && pawn.Faction.HostileTo(value.Faction))
             {
                 var projectile = (Projectile) GenSpawn.Spawn(def, pawn.Position, pawn.Map);
-                var projectileHitFlags = ProjectileHitFlags.All;
-                projectile.Launch(pawn, pawn.Position.ToVector3(), value.Position, value,
-                    projectileHitFlags, thingWithComps);
+                var all = ProjectileHitFlags.All;
+                projectile.Launch(pawn, pawn.Position.ToVector3(), new LocalTargetInfo(value.Position), value,
+                    all, false, thingWithComps);
                 if (showText)
                 {
                     MoteMaker.ThrowText(pawn.Position.ToVector3(), pawn.Map, "ProjectileInversionText".Translate());

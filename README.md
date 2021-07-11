@@ -19,6 +19,7 @@ A brief explanation of the mod as I understand it:
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 - Traditional Chinese translation added, thanks shiuanyue!
 - Added a setting to just block the projectiles
+- Added CE-support
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
@@ -39,7 +40,7 @@ For those who came in due to the steam name being in english, but no english des
 
 New Features: Sword Master
 Low probability random occurrence
-This feature is also obtained when the colony's fighting level reaches level 20.
+This feature is also obtained when the colony&apos;s fighting level reaches level 20.
 
 Bullet counter condition:
 In the recruitment of colonists, armed with melee weapons (non-colonials do not need to be recruited)
