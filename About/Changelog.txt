@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.0.9.0 - Fixed the CE-assemblies for 1.2
+
+
 1.0.8.0 - Mod updated for 1.3 and passed autotests
 
 
