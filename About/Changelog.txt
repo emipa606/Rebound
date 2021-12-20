@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.0.11.0 - Added setting for not giving the rebound-trait when melee skill reaches 20
+
+
 1.0.10.0 - Added settings for modifying base rebound chance and weapon-damage per rebound
 
 

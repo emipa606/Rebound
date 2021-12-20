@@ -9,6 +9,11 @@ public static class SkillRecord_Learn
 {
     public static void Postfix(SkillRecord __instance)
     {
+        if (!Settings.addTrait)
+        {
+            return;
+        }
+
         var traverse = Traverse.Create(__instance);
         var value = traverse.Field("pawn").GetValue<Pawn>();
         if (API.hasTrait(value))

@@ -13,4 +13,6 @@
   <ProjectileInversionSettingCurrentModVersionLabel>Installed mod-version: {0}</ProjectileInversionSettingCurrentModVersionLabel>
   <ProjectileInversionSettingWeaponDamageLabel>Durability damage per rebound: {0}</ProjectileInversionSettingWeaponDamageLabel>
   <ProjectileInversionSettingBaseChanceLabel>Base rebound-chance {0}%</ProjectileInversionSettingBaseChanceLabel>
+  <ProjectileInversionSettingAutoTraitLabel>Give rebound-trait automatically</ProjectileInversionSettingAutoTraitLabel>
+  <ProjectileInversionSettingAutoTraitDesc>Pawns will get the rebound-trait automatically when reaching level 20 in melee skill</ProjectileInversionSettingAutoTraitDesc>
 </LanguageData>

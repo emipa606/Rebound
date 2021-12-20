@@ -10,6 +10,7 @@ public class Settings : ModSettings
 
     public static bool showText = true;
     public static bool noRebound;
+    public static bool addTrait = true;
     public static string currentVersion;
     public static int weaponDamage = 1;
     public static float baseChance = 0.5f;
@@ -25,6 +26,8 @@ public class Settings : ModSettings
             "ProjectileInversionSettingShowTextDesc".Translate());
         listing_Standard.CheckboxLabeled("ProjectileInversionSettingNoReboundLabel".Translate(), ref noRebound,
             "ProjectileInversionSettingNoReboundDesc".Translate());
+        listing_Standard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref addTrait,
+            "ProjectileInversionSettingAutoTraitDesc".Translate());
         listing_Standard.Gap();
         listing_Standard.Label("ProjectileInversionSettingWeaponDamageLabel".Translate(weaponDamage));
         listing_Standard.IntAdjuster(ref weaponDamage, 1);
@@ -46,6 +49,7 @@ public class Settings : ModSettings
     {
         Scribe_Values.Look(ref speed, "PISpeed", 200);
         Scribe_Values.Look(ref showText, "PIShowText", true);
+        Scribe_Values.Look(ref addTrait, "PIAddTrait", true);
         Scribe_Values.Look(ref noRebound, "PINoRebound");
         Scribe_Values.Look(ref weaponDamage, "PIWeaponDamage", 1);
     }
