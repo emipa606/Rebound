@@ -10,4 +10,7 @@
   <ProjectileInversionSettingShowTextDesc>If true,it will throw a text mote when you rebound projectile.(default:true)</ProjectileInversionSettingShowTextDesc>
   <ProjectileInversionSettingNoReboundLabel>Only block, no rebound</ProjectileInversionSettingNoReboundLabel>
   <ProjectileInversionSettingNoReboundDesc>If true, will just block damage, not rebound the projectile.(default:false)</ProjectileInversionSettingNoReboundDesc>
+  <ProjectileInversionSettingCurrentModVersionLabel>Installed mod-version: {0}</ProjectileInversionSettingCurrentModVersionLabel>
+  <ProjectileInversionSettingWeaponDamageLabel>Durability damage per rebound: {0}</ProjectileInversionSettingWeaponDamageLabel>
+  <ProjectileInversionSettingBaseChanceLabel>Base rebound-chance {0}%</ProjectileInversionSettingBaseChanceLabel>
 </LanguageData>

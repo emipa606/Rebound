@@ -1,23 +1,25 @@
-﻿using UnityEngine;
+﻿using Mlie;
+using UnityEngine;
 using Verse;
 
-namespace ProjectileInversion
+namespace ProjectileInversion;
+
+public class PIMod : Mod
 {
-    public class PIMod : Mod
+    public PIMod(ModContentPack content) : base(content)
     {
-        public PIMod(ModContentPack content) : base(content)
-        {
-            GetSettings<Settings>();
-        }
+        GetSettings<Settings>();
+        Settings.currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.Rebound"));
+    }
 
-        public override string SettingsCategory()
-        {
-            return "ProjectileInversionCategory".Translate();
-        }
+    public override string SettingsCategory()
+    {
+        return "ProjectileInversionCategory".Translate();
+    }
 
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            Settings.DoSettingsWindowContents(inRect);
-        }
+    public override void DoSettingsWindowContents(Rect inRect)
+    {
+        Settings.DoSettingsWindowContents(inRect);
     }
 }

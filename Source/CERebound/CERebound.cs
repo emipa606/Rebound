@@ -2,14 +2,13 @@
 using HarmonyLib;
 using Verse;
 
-namespace ProjectileInversion
+namespace ProjectileInversion;
+
+[StaticConstructorOnStartup]
+public static class CERebound
 {
-    [StaticConstructorOnStartup]
-    public static class CERebound
+    static CERebound()
     {
-        static CERebound()
-        {
-            new Harmony("net.papaz.projectileinversion.ce").PatchAll(Assembly.GetExecutingAssembly());
-        }
+        new Harmony("net.papaz.projectileinversion.ce").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

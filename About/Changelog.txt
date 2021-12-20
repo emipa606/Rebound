@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.0.10.0 - Added settings for modifying base rebound chance and weapon-damage per rebound
+
+
 1.0.9.0 - Fixed the CE-assemblies for 1.2
 
 

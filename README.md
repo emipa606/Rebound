@@ -1,6 +1,6 @@
 # Rebound
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1692393812
@@ -21,26 +21,17 @@ A brief explanation of the mod as I understand it:
 - Added a setting to just block the projectiles
 - Added CE-support
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/Rebound]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 For those who came in due to the steam name being in english, but no english description, here is a google translate for you. (By Umbreonic Wizard )
 
 New Features: Sword Master
 Low probability random occurrence
-This feature is also obtained when the colony&apos;s fighting level reaches level 20.
+This feature is also obtained when the colony's fighting level reaches level 20.
 
 Bullet counter condition:
 In the recruitment of colonists, armed with melee weapons (non-colonials do not need to be recruited)
@@ -54,7 +45,7 @@ Every time the damaged weapon is lowered 1 Durable
 Weapons are automatically thrown to the ground when they reach 1
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -64,7 +55,6 @@ Weapons are automatically thrown to the ground when they reach 1
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 

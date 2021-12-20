@@ -2,14 +2,13 @@
 using HarmonyLib;
 using Verse;
 
-namespace ProjectileInversion
+namespace ProjectileInversion;
+
+[StaticConstructorOnStartup]
+public static class StartUp
 {
-    [StaticConstructorOnStartup]
-    public static class StartUp
+    static StartUp()
     {
-        static StartUp()
-        {
-            new Harmony("net.papaz.projectileinversion").PatchAll(Assembly.GetExecutingAssembly());
-        }
+        new Harmony("net.papaz.projectileinversion").PatchAll(Assembly.GetExecutingAssembly());
     }
 }
