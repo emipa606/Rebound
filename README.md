@@ -19,6 +19,8 @@ A brief explanation of the mod as I understand it:
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 - Traditional Chinese translation added, thanks shiuanyue!
 - Added a setting to just block the projectiles
+- Added setting for disabling automatically getting the rebound trait at melee skill 20
+- Added settings for the weapon-damage and base rebound-chance
 - Added CE-support
 
 ![Image](https://i.imgur.com/pufA0kM.png)
