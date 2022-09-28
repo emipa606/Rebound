@@ -52,5 +52,6 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref addTrait, "PIAddTrait", true);
         Scribe_Values.Look(ref noRebound, "PINoRebound");
         Scribe_Values.Look(ref weaponDamage, "PIWeaponDamage", 1);
+        Scribe_Values.Look(ref baseChance, "PIBaseChance", 0.5f);
     }
 }
