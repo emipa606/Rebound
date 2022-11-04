@@ -13,7 +13,7 @@ public static class Projectile_ImpactSomething
         var traverse = Traverse.Create(__instance);
         var thing = traverse.Field("usedTarget").GetValue<LocalTargetInfo>().Thing;
 
-        if (!(thing is Pawn pawn) || pawn.kindDef.RaceProps.IsMechanoid)
+        if (thing is not Pawn pawn || pawn.kindDef.RaceProps.IsMechanoid)
         {
             return true;
         }

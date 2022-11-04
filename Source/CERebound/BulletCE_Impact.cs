@@ -15,7 +15,7 @@ public static class BulletCE_Impact
         ref float ___shotRotation, ref int ___intTicksToImpact, ref int ___startingTicksToImpactInt,
         ref Vector2 ___origin, ref bool ___landed)
     {
-        if (!(hitThing is Pawn pawn) || pawn.kindDef.RaceProps.IsMechanoid)
+        if (hitThing is not Pawn pawn || pawn.kindDef.RaceProps.IsMechanoid)
         {
             return true;
         }
