@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.4.3 - 1.4 update failed to publish. Republishing again.
+
+
 1.4.2 - 1.4 update failed to publish. Republishing.
 
 
