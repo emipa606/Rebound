@@ -26,7 +26,7 @@ public static class SkillRecord_Learn
             return;
         }
 
-        if (__instance.levelInt != 20)
+        if (__instance.GetLevel() != 20)
         {
             return;
         }

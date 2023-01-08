@@ -61,3 +61,4 @@ Weapons are automatically thrown to the ground when they reach 1
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756]Last updated 2023-01-08

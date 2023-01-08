@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.4.4 - Should work better with genes that modifies meleeskill
+
+
 1.4.3 - 1.4 update failed to publish. Republishing again.
 
 
