@@ -7,16 +7,14 @@ namespace ProjectileInversion;
 [HarmonyPatch(typeof(SkillRecord), "Learn", typeof(float), typeof(bool))]
 public static class SkillRecord_Learn
 {
-    public static void Postfix(SkillRecord __instance)
+    public static void Postfix(SkillRecord __instance, ref Pawn ___pawn)
     {
         if (!Settings.addTrait)
         {
             return;
         }
 
-        var traverse = Traverse.Create(__instance);
-        var value = traverse.Field("pawn").GetValue<Pawn>();
-        if (API.hasTrait(value))
+        if (API.hasTrait(___pawn))
         {
             return;
         }
@@ -31,14 +29,14 @@ public static class SkillRecord_Learn
             return;
         }
 
-        value.story.traits.GainTrait(new Trait(TraitDef.Named("ProjectileInversion_Trait")));
-        var isColonist = value.IsColonist;
+        ___pawn.story.traits.GainTrait(new Trait(TraitDef.Named("ProjectileInversion_Trait")));
+        var isColonist = ___pawn.IsColonist;
         if (isColonist)
         {
             Messages.Message(
-                "YourPawnGainProjectileInversionTraitMsg".Translate(value.Label,
+                "YourPawnGainProjectileInversionTraitMsg".Translate(___pawn.Label,
                     TraitDef.Named("ProjectileInversion_Trait").degreeDatas.RandomElement().label),
-                value, MessageTypeDefOf.PositiveEvent);
+                ___pawn, MessageTypeDefOf.PositiveEvent);
         }
     }
 }

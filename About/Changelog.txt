@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.4.6 - Removed the need for reflecton
+
+
 1.4.5 - Now supports mod-extension to use any trait as a rebound-trait.
 
 

@@ -22,6 +22,7 @@ A brief explanation of the mod as I understand it:
 - Added setting for disabling automatically getting the rebound trait at melee skill 20
 - Added settings for the weapon-damage and base rebound-chance
 - Added CE-support
+- Any trait can be a rebound-trait by adding a mod-extension to it
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
