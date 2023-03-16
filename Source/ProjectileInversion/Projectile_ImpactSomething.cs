@@ -8,10 +8,9 @@ namespace ProjectileInversion;
 [HarmonyPatch(typeof(Projectile), "ImpactSomething")]
 public static class Projectile_ImpactSomething
 {
-    public static bool Prefix(Projectile __instance)
+    public static bool Prefix(Projectile __instance, LocalTargetInfo ___usedTarget, Thing ___launcher)
     {
-        var traverse = Traverse.Create(__instance);
-        var thing = traverse.Field("usedTarget").GetValue<LocalTargetInfo>().Thing;
+        var thing = ___usedTarget.Thing;
 
         if (thing is not Pawn pawn || pawn.kindDef.RaceProps.IsMechanoid)
         {
@@ -34,13 +33,11 @@ public static class Projectile_ImpactSomething
             return true;
         }
 
-        var value = traverse.Field("launcher").GetValue<Thing>();
         var def = __instance.def;
         GenClamor.DoClamor(pawn, 2.1f, ClamorDefOf.Impact);
         FleckMaker.Static(pawn.Position, pawn.Map, FleckDefOf.ShotFlash);
         SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
-        var value2 = Traverse.Create(pawn).Field("drawer").GetValue<Pawn_DrawTracker>();
-        value2.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
+        pawn.drawer.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
         var showText = Settings.showText;
 
         ThingWithComps thingWithComps = null;
@@ -51,11 +48,11 @@ public static class Projectile_ImpactSomething
 
         pawn.skills.Learn(SkillDefOf.Melee, 200f);
         __instance.Destroy();
-        if (!Settings.noRebound && value != null && pawn.Faction.HostileTo(value.Faction))
+        if (!Settings.noRebound && ___launcher != null && pawn.Faction.HostileTo(___launcher.Faction))
         {
             var projectile = (Projectile)GenSpawn.Spawn(def, pawn.Position, pawn.Map);
             var all = ProjectileHitFlags.All;
-            projectile.Launch(pawn, pawn.Position.ToVector3(), new LocalTargetInfo(value.Position), value,
+            projectile.Launch(pawn, pawn.Position.ToVector3(), new LocalTargetInfo(___launcher.Position), ___launcher,
                 all, false, thingWithComps);
             if (showText)
             {

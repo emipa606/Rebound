@@ -45,7 +45,7 @@ public static class API
 
     public static bool hasTrait(Pawn pawn)
     {
-        return pawn.story.traits.HasTrait(TraitDef.Named("ProjectileInversion_Trait"));
+        return StartUp.ValidTraitDefs.Any(pawn.story.traits.HasTrait);
     }
 
     public static bool checkPawnInverseChance(Pawn pawn)

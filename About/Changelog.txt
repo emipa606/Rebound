@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.4.5 - Now supports mod-extension to use any trait as a rebound-trait.
+
+
 1.4.4 - Should work better with genes that modifies meleeskill
 
 
