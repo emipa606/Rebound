@@ -1,5 +1,9 @@
 # Changelog for Rebound
 
+1.4.7 - Added setting to change the level where the trait is learned. Supports mods that increases the max-level of skills..
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.4.6 - Removed the need for reflecton
 
 

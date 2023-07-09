@@ -16,4 +16,6 @@
   <ProjectileInversionSettingBaseChanceLabel>Chance de rebond de la base {0}%.</ProjectileInversionSettingBaseChanceLabel>
   <ProjectileInversionSettingAutoTraitLabel>Donner le trait de rebond automatiquement</ProjectileInversionSettingAutoTraitLabel>
   <ProjectileInversionSettingAutoTraitDesc>Les pions obtiendront automatiquement le trait de rebond lorsqu'ils atteindront le niveau 20 en compétence de mêlée.</ProjectileInversionSettingAutoTraitDesc>
+  <ProjectileInversionSettingLevelToTriggerLabel>Niveau de compétence pour déclencher le trait de rebond : {0}</ProjectileInversionSettingLevelToTriggerLabel>
+  <ProjectileInversionSettingLevelToTriggerDesc>Le niveau de compétence auquel les pions doivent obtenir le trait. Peut être supérieur à 20 si un mod supporté est chargé.</ProjectileInversionSettingLevelToTriggerDesc>
 </LanguageData>

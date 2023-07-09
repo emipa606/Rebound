@@ -10,6 +10,7 @@ namespace ProjectileInversion;
 public static class StartUp
 {
     public static readonly List<TraitDef> ValidTraitDefs;
+    public static bool UnlimitedSkillPossible;
 
     static StartUp()
     {
@@ -22,6 +23,12 @@ public static class StartUp
                 ValidTraitDefs.Add(traitDef);
             }
         }
+
+        UnlimitedSkillPossible =
+            new SkillRecord
+            {
+                levelInt = 100, cachedTotallyDisabled = BoolUnknown.False, cachedPermanentlyDisabled = BoolUnknown.False
+            }.GetLevel(false) != 20;
 
         Log.Message(
             $"[Rebound]: Added {ValidTraitDefs.Count} traits as rebound-traits. {string.Join(", ", ValidTraitDefs)}");

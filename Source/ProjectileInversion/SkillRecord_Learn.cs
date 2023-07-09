@@ -24,7 +24,7 @@ public static class SkillRecord_Learn
             return;
         }
 
-        if (__instance.GetLevel() < 20)
+        if (__instance.GetLevel() < Settings.levelToTrigger)
         {
             return;
         }

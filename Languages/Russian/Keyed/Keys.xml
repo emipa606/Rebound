@@ -16,4 +16,6 @@
   <ProjectileInversionSettingBaseChanceLabel>Базовый шанс отскока {0}%</ProjectileInversionSettingBaseChanceLabel>
   <ProjectileInversionSettingAutoTraitLabel>Давать траекторию отскока автоматически</ProjectileInversionSettingAutoTraitLabel>
   <ProjectileInversionSettingAutoTraitDesc>Пешки будут получать трейт отскока автоматически при достижении 20 уровня навыка ближнего боя</ProjectileInversionSettingAutoTraitDesc>
+  <ProjectileInversionSettingLevelToTriggerLabel>Уровень навыка для срабатывания отскока-трейта: {0}</ProjectileInversionSettingLevelToTriggerLabel>
+  <ProjectileInversionSettingLevelToTriggerDesc>Уровень навыка, при котором пешки должны получить этот признак. Может быть установлен выше 20, если загружен поддерживаемый мод.</ProjectileInversionSettingLevelToTriggerDesc>
 </LanguageData>

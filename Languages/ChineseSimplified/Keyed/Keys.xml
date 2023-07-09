@@ -16,4 +16,6 @@
   <ProjectileInversionSettingBaseChanceLabel>基地反弹-机会 {0}%</ProjectileInversionSettingBaseChanceLabel>
   <ProjectileInversionSettingAutoTraitLabel>自动给予回弹-肖像</ProjectileInversionSettingAutoTraitLabel>
   <ProjectileInversionSettingAutoTraitDesc>卒子在近战技能达到20级时，将自动获得反弹特性。</ProjectileInversionSettingAutoTraitDesc>
+  <ProjectileInversionSettingLevelToTriggerLabel>触发反弹特性的技能等级：{0}。</ProjectileInversionSettingLevelToTriggerLabel>
+  <ProjectileInversionSettingLevelToTriggerDesc>卒子应该获得该特性的技能等级。如果加载了支持的mod，可以设置为高于20。</ProjectileInversionSettingLevelToTriggerDesc>
 </LanguageData>

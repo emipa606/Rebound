@@ -13,6 +13,7 @@ public class Settings : ModSettings
     public static bool addTrait = true;
     public static string currentVersion;
     public static int weaponDamage = 1;
+    public static int levelToTrigger = 20;
     public static float baseChance = 0.5f;
 
     public static void DoSettingsWindowContents(Rect rect)
@@ -28,6 +29,14 @@ public class Settings : ModSettings
             "ProjectileInversionSettingNoReboundDesc".Translate());
         listing_Standard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref addTrait,
             "ProjectileInversionSettingAutoTraitDesc".Translate());
+        listing_Standard.Label("ProjectileInversionSettingLevelToTriggerLabel".Translate(levelToTrigger), -1f,
+            "ProjectileInversionSettingLevelToTriggerDesc".Translate());
+        listing_Standard.IntAdjuster(ref levelToTrigger, 1, 1);
+        if (levelToTrigger > 20 && !StartUp.UnlimitedSkillPossible)
+        {
+            levelToTrigger = 20;
+        }
+
         listing_Standard.Gap();
         listing_Standard.Label("ProjectileInversionSettingWeaponDamageLabel".Translate(weaponDamage));
         listing_Standard.IntAdjuster(ref weaponDamage, 1);
@@ -47,6 +56,7 @@ public class Settings : ModSettings
 
     public override void ExposeData()
     {
+        Scribe_Values.Look(ref levelToTrigger, "PILevelToTrigger", 20);
         Scribe_Values.Look(ref speed, "PISpeed", 200);
         Scribe_Values.Look(ref showText, "PIShowText", true);
         Scribe_Values.Look(ref addTrait, "PIAddTrait", true);

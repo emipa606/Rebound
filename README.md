@@ -60,4 +60,4 @@ Weapons are automatically thrown to the ground when they reach 1
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756]Last updated 2023-03-16
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756]Last updated 2023-07-09
