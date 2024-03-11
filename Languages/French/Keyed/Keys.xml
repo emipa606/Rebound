@@ -18,4 +18,6 @@
   <ProjectileInversionSettingAutoTraitDesc>Les pions obtiendront automatiquement le trait de rebond lorsqu'ils atteindront le niveau 20 en compétence de mêlée.</ProjectileInversionSettingAutoTraitDesc>
   <ProjectileInversionSettingLevelToTriggerLabel>Niveau de compétence pour déclencher le trait de rebond : {0}</ProjectileInversionSettingLevelToTriggerLabel>
   <ProjectileInversionSettingLevelToTriggerDesc>Le niveau de compétence auquel les pions doivent obtenir le trait. Peut être supérieur à 20 si un mod supporté est chargé.</ProjectileInversionSettingLevelToTriggerDesc>
+  <ProjectileInversionSettingUncapManipulationLabel>Calcul de la manipulation non plafonnée</ProjectileInversionSettingUncapManipulationLabel>
+  <ProjectileInversionSettingUncapManipulationDesc>Normalement, les calculs de manipulation sont plafonnés à 100 % ; activez ce paramètre pour l'ignorer.</ProjectileInversionSettingUncapManipulationDesc>
 </LanguageData>

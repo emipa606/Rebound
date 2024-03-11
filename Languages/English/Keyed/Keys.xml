@@ -17,4 +17,6 @@
   <ProjectileInversionSettingAutoTraitDesc>Pawns will get the rebound-trait automatically when reaching level 20 in melee skill or level defined here</ProjectileInversionSettingAutoTraitDesc>
   <ProjectileInversionSettingLevelToTriggerLabel>Skill-level to trigger the rebound-trait: {0}</ProjectileInversionSettingLevelToTriggerLabel>
   <ProjectileInversionSettingLevelToTriggerDesc>The skill-level that pawns should get the trait. Can be set to higher than 20 if a supported mod is loaded.</ProjectileInversionSettingLevelToTriggerDesc>
+  <ProjectileInversionSettingUncapManipulationLabel>Uncapped manipulation calculation</ProjectileInversionSettingUncapManipulationLabel>
+  <ProjectileInversionSettingUncapManipulationDesc>Normally a manipulation calculations are caped at 100%, enable this setting to ignore this. </ProjectileInversionSettingUncapManipulationDesc>
 </LanguageData>

@@ -18,4 +18,6 @@
   <ProjectileInversionSettingAutoTraitDesc>Пешки будут получать трейт отскока автоматически при достижении 20 уровня навыка ближнего боя</ProjectileInversionSettingAutoTraitDesc>
   <ProjectileInversionSettingLevelToTriggerLabel>Уровень навыка для срабатывания отскока-трейта: {0}</ProjectileInversionSettingLevelToTriggerLabel>
   <ProjectileInversionSettingLevelToTriggerDesc>Уровень навыка, при котором пешки должны получить этот признак. Может быть установлен выше 20, если загружен поддерживаемый мод.</ProjectileInversionSettingLevelToTriggerDesc>
+  <ProjectileInversionSettingUncapManipulationLabel>Расчет манипуляций без привязки</ProjectileInversionSettingUncapManipulationLabel>
+  <ProjectileInversionSettingUncapManipulationDesc>Обычно при вычислениях манипуляций накидывается 100%, включите эту настройку, чтобы игнорировать это.</ProjectileInversionSettingUncapManipulationDesc>
 </LanguageData>

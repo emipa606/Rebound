@@ -18,4 +18,6 @@
   <ProjectileInversionSettingAutoTraitDesc>Bauern erhalten die Rückstoß-Eigenschaft automatisch, wenn sie Stufe 20 in der Nahkampf-Fertigkeit erreichen.</ProjectileInversionSettingAutoTraitDesc>
   <ProjectileInversionSettingLevelToTriggerLabel>Geschicklichkeitsstufe zum Auslösen der Rebound-Eigenschaft: {0}</ProjectileInversionSettingLevelToTriggerLabel>
   <ProjectileInversionSettingLevelToTriggerDesc>Die Fertigkeitsstufe, auf der die Bauern die Eigenschaft erhalten sollen. Kann auf höher als 20 gesetzt werden, wenn ein unterstützter Mod geladen ist.</ProjectileInversionSettingLevelToTriggerDesc>
+  <ProjectileInversionSettingUncapManipulationLabel>Berechnung der ungedeckten Manipulation</ProjectileInversionSettingUncapManipulationLabel>
+  <ProjectileInversionSettingUncapManipulationDesc>Normalerweise werden Manipulationsberechnungen bei 100% gedeckelt; aktivieren Sie diese Einstellung, um dies zu ignorieren.</ProjectileInversionSettingUncapManipulationDesc>
 </LanguageData>

@@ -15,6 +15,7 @@ public class Settings : ModSettings
     public static int weaponDamage = 1;
     public static int levelToTrigger = 20;
     public static float baseChance = 0.5f;
+    public static bool uncapManipulation;
 
     public static void DoSettingsWindowContents(Rect rect)
     {
@@ -29,6 +30,9 @@ public class Settings : ModSettings
             "ProjectileInversionSettingNoReboundDesc".Translate());
         listing_Standard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref addTrait,
             "ProjectileInversionSettingAutoTraitDesc".Translate());
+        listing_Standard.CheckboxLabeled("ProjectileInversionSettingUncapManipulationLabel".Translate(),
+            ref uncapManipulation,
+            "ProjectileInversionSettingUncapManipulationDesc".Translate());
         listing_Standard.Label("ProjectileInversionSettingLevelToTriggerLabel".Translate(levelToTrigger), -1f,
             "ProjectileInversionSettingLevelToTriggerDesc".Translate());
         listing_Standard.IntAdjuster(ref levelToTrigger, 1, 1);
@@ -61,6 +65,7 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref showText, "PIShowText", true);
         Scribe_Values.Look(ref addTrait, "PIAddTrait", true);
         Scribe_Values.Look(ref noRebound, "PINoRebound");
+        Scribe_Values.Look(ref uncapManipulation, "uncapManipulation");
         Scribe_Values.Look(ref weaponDamage, "PIWeaponDamage", 1);
         Scribe_Values.Look(ref baseChance, "PIBaseChance", 0.5f);
     }

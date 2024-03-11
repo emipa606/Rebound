@@ -72,7 +72,7 @@ public static class API
 
         var num = (float)pawn.skills.GetSkill(SkillDefOf.Melee).levelInt;
         var num2 = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation);
-        if (num2 > 1f)
+        if (num2 > 1f && !Settings.uncapManipulation)
         {
             num2 = 1f;
         }

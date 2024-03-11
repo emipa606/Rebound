@@ -23,9 +23,25 @@ A brief explanation of the mod as I understand it:
 - Added settings for the weapon-damage and base rebound-chance
 - Added CE-support
 - Any trait can be a rebound-trait by adding a mod-extension to it
+- Added setting to change the level where the trait is learned. Supports mods that increases the max-level of skills.
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
+
+[table]
+	[tr]
+		[td]https://dsc.gg/mlie]![Image](https://i.imgur.com/zdzzBrc.png)
+[/td]
+		[td]https://github.com/emipa606/Rebound]![Image](https://i.imgur.com/kTkpTOE.png)
+[/td]
+    [/tr]
+    [tr]
+        [td]![Image](https://i.imgur.com/WjDSfUn.png)
+[/td]
+        [td]![Image](https://i.imgur.com/Be8E2qJ.png)
+[/td]
+    [/tr]
+[/table]
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -54,10 +70,12 @@ Weapons are automatically thrown to the ground when they reach 1
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib and command Ctrl+F12
+-  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756]Last updated 2023-07-09
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756]![Image](https://img.shields.io/github/v/release/emipa606/Rebound?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
+

@@ -18,4 +18,6 @@
   <ProjectileInversionSettingAutoTraitDesc>卒子在近战技能达到20级时，将自动获得反弹特性。</ProjectileInversionSettingAutoTraitDesc>
   <ProjectileInversionSettingLevelToTriggerLabel>触发反弹特性的技能等级：{0}。</ProjectileInversionSettingLevelToTriggerLabel>
   <ProjectileInversionSettingLevelToTriggerDesc>卒子应该获得该特性的技能等级。如果加载了支持的mod，可以设置为高于20。</ProjectileInversionSettingLevelToTriggerDesc>
+  <ProjectileInversionSettingUncapManipulationLabel>无上限操纵计算</ProjectileInversionSettingUncapManipulationLabel>
+  <ProjectileInversionSettingUncapManipulationDesc>通常情况下，操作计算的上限为 100%，启用此设置可忽略这一点。</ProjectileInversionSettingUncapManipulationDesc>
 </LanguageData>
