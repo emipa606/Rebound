@@ -4,7 +4,7 @@ using Verse;
 
 namespace ProjectileInversion;
 
-[HarmonyPatch(typeof(SkillRecord), "Learn", typeof(float), typeof(bool))]
+[HarmonyPatch(typeof(SkillRecord), nameof(SkillRecord.Learn), typeof(float), typeof(bool), typeof(bool))]
 public static class SkillRecord_Learn
 {
     public static void Postfix(SkillRecord __instance, ref Pawn ___pawn)

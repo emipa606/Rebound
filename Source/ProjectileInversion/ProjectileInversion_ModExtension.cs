@@ -2,6 +2,4 @@
 
 namespace ProjectileInversion;
 
-public class ProjectileInversion_ModExtension : DefModExtension
-{
-}
+public class ProjectileInversion_ModExtension : DefModExtension;

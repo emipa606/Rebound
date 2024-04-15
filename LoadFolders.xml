@@ -26,4 +26,10 @@
     <li IfModActive="syrchalis.traitvalue">SYRTraitValue</li>
     <li IfModActive="CETeam.CombatExtended">CE/1.4</li>
   </v1.4>
+  <v1.5>
+    <li>1.5</li>
+    <li>/</li>
+    <li IfModActive="syrchalis.traitvalue">SYRTraitValue</li>
+    <li IfModActive="CETeam.CombatExtended">CE/1.5</li>
+  </v1.5>
 </loadFolders>

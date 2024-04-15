@@ -27,21 +27,6 @@ A brief explanation of the mod as I understand it:
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://dsc.gg/mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/Rebound]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-    [tr]
-        [td]![Image](https://i.imgur.com/WjDSfUn.png)
-[/td]
-        [td]![Image](https://i.imgur.com/Be8E2qJ.png)
-[/td]
-    [/tr]
-[/table]
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -74,6 +59,7 @@ Weapons are automatically thrown to the ground when they reach 1
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+-  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
 
 
 

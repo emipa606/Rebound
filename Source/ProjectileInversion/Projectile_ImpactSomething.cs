@@ -5,7 +5,7 @@ using Verse.Sound;
 
 namespace ProjectileInversion;
 
-[HarmonyPatch(typeof(Projectile), "ImpactSomething")]
+[HarmonyPatch(typeof(Projectile), nameof(Projectile.ImpactSomething))]
 public static class Projectile_ImpactSomething
 {
     public static bool Prefix(Projectile __instance, LocalTargetInfo ___usedTarget, Thing ___launcher)

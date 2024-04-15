@@ -10,12 +10,12 @@ namespace ProjectileInversion;
 public static class StartUp
 {
     public static readonly List<TraitDef> ValidTraitDefs;
-    public static bool UnlimitedSkillPossible;
+    public static readonly bool UnlimitedSkillPossible;
 
     static StartUp()
     {
         new Harmony("net.papaz.projectileinversion").PatchAll(Assembly.GetExecutingAssembly());
-        ValidTraitDefs = new List<TraitDef>();
+        ValidTraitDefs = [];
         foreach (var traitDef in DefDatabase<TraitDef>.AllDefsListForReading)
         {
             if (traitDef.HasModExtension<ProjectileInversion_ModExtension>())

@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.5.0 - Updated for 1.5
+
+
 1.4.8 - Added setting to use higher than 100% manipulation skill in calculations
 
 

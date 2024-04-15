@@ -7,13 +7,12 @@ using Verse.Sound;
 
 namespace ProjectileInversion;
 
-[HarmonyPatch(typeof(BulletCE), "Impact", typeof(Thing))]
+[HarmonyPatch(typeof(BulletCE), nameof(BulletCE.Impact), typeof(Thing))]
 public static class BulletCE_Impact
 {
     public static bool Prefix(Thing hitThing, BulletCE __instance, ref Thing ___launcher,
-        ref Thing ___intendedTarget, ref Ray ___shotLine, ref IntVec3 ___originInt, ref Vector3 ___destinationInt,
-        ref float ___shotRotation, ref int ___intTicksToImpact, ref int ___startingTicksToImpactInt,
-        ref Vector2 ___origin, ref bool ___landed)
+        ref Thing ___intendedTarget, ref Ray ___shotLine, ref Vector3 ___destinationInt,
+        ref float ___shotRotation, ref Vector2 ___origin, ref bool ___landed)
     {
         if (hitThing is not Pawn pawn || pawn.kindDef.RaceProps.IsMechanoid)
         {
