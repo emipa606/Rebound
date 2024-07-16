@@ -5,7 +5,7 @@ using Verse.Sound;
 
 namespace ProjectileInversion;
 
-[HarmonyPatch(typeof(Projectile), nameof(Projectile.ImpactSomething))]
+[HarmonyPatch(typeof(Projectile), "ImpactSomething")]
 public static class Projectile_ImpactSomething
 {
     public static bool Prefix(Projectile __instance, LocalTargetInfo ___usedTarget, Thing ___launcher)
@@ -37,7 +37,7 @@ public static class Projectile_ImpactSomething
         GenClamor.DoClamor(pawn, 2.1f, ClamorDefOf.Impact);
         FleckMaker.Static(pawn.Position, pawn.Map, FleckDefOf.ShotFlash);
         SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
-        pawn.drawer.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
+        pawn.Drawer.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
         var showText = Settings.showText;
 
         ThingWithComps thingWithComps = null;

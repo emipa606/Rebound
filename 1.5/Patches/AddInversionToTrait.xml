@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <!-- Tag the trait with the mod-extension -->
   <Operation Class="PatchOperationAddModExtension">

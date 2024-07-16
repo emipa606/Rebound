@@ -37,7 +37,7 @@ A brief explanation of the mod as I understand it:
 		0.5 * 1 * 1.8 = 0.9 = 90% chance
  - Only projectiles that would have hit the pawn can be rebounded
  - Weapon has a chance to take durability-damage when rebounding
-	0.4 * (Melee-skill/5)
+	0.4 / (Melee-skill/5)
  - At 1 durability the weapon is thrown to the ground to avoid getting destroyed
  - Projectiles that are too fast cannot be rebounded, speed-limit can be changed in settings.
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
@@ -94,5 +94,5 @@ Weapons are automatically thrown to the ground when they reach 1
 [/list]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756][img]https://img.shields.io/github/v/release/emipa606/Rebound?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
 </ModMetaData>

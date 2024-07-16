@@ -11,7 +11,7 @@ namespace ProjectileInversion;
 public static class BulletCE_Impact
 {
     public static bool Prefix(Thing hitThing, BulletCE __instance, ref Thing ___launcher,
-        ref Thing ___intendedTarget, ref Ray ___shotLine, ref Vector3 ___destinationInt,
+        ref Thing ___intendedTarget, ref Ray ___shotLine,
         ref float ___shotRotation, ref Vector2 ___origin, ref bool ___landed)
     {
         if (hitThing is not Pawn pawn || pawn.kindDef.RaceProps.IsMechanoid)
@@ -49,7 +49,7 @@ public static class BulletCE_Impact
             ___launcher = hitThing;
             ___shotRotation = (___shotRotation + 180) % 360;
             ___shotLine = new Ray(___shotLine.direction, ___shotLine.origin);
-            ___destinationInt = new Vector3(0f, 0f, -1f);
+            __instance.Destination = ___origin;
             ___origin = new Vector2(__instance.Position.x, __instance.Position.z);
             ___landed = false;
             if (showText)
