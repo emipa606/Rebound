@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.5.2 - Updated reference to the continued version of [SYR] Trait Value
+
+
 1.5.1 - Fixed the CE-patch
 
 
