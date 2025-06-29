@@ -9,7 +9,7 @@ public class PIMod : Mod
     public PIMod(ModContentPack content) : base(content)
     {
         GetSettings<Settings>();
-        Settings.currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
+        Settings.CurrentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     public override string SettingsCategory()

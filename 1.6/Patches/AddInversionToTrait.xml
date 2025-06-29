@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Tag the trait with the mod-extension -->
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/TraitDef[defName="ProjectileInversion_Trait"]</xpath>
+    <value>
+      <li Class="ProjectileInversion.ProjectileInversion_ModExtension" />
+    </value>
+  </Operation>
+</Patch>

@@ -6,67 +6,67 @@ namespace ProjectileInversion;
 
 public class Settings : ModSettings
 {
-    public static int speed = 200;
+    public static int Speed = 200;
 
-    public static bool showText = true;
-    public static bool noRebound;
-    public static bool addTrait = true;
-    public static string currentVersion;
-    public static int weaponDamage = 1;
-    public static int levelToTrigger = 20;
-    public static float baseChance = 0.5f;
-    public static bool uncapManipulation;
+    public static bool ShowText = true;
+    public static bool NoRebound;
+    public static bool AddTrait = true;
+    public static string CurrentVersion;
+    public static int WeaponDamage = 1;
+    public static int LevelToTrigger = 20;
+    public static float BaseChance = 0.5f;
+    public static bool UncapManipulation;
 
     public static void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard(GameFont.Small) { ColumnWidth = rect.width };
-        listing_Standard.Begin(rect);
-        listing_Standard.Label("ProjectileInversionSettingSpeedLabel".Translate() + ":" + speed.ToString("0.0"),
+        var listingStandard = new Listing_Standard(GameFont.Small) { ColumnWidth = rect.width };
+        listingStandard.Begin(rect);
+        listingStandard.Label("ProjectileInversionSettingSpeedLabel".Translate() + ":" + Speed.ToString("0.0"),
             -1f, "ProjectileInversionSettingSpeedDesc".Translate());
-        speed = (int)listing_Standard.Slider(speed, 1f, 999f);
-        listing_Standard.CheckboxLabeled("ProjectileInversionSettingShowTextLabel".Translate(), ref showText,
+        Speed = (int)listingStandard.Slider(Speed, 1f, 999f);
+        listingStandard.CheckboxLabeled("ProjectileInversionSettingShowTextLabel".Translate(), ref ShowText,
             "ProjectileInversionSettingShowTextDesc".Translate());
-        listing_Standard.CheckboxLabeled("ProjectileInversionSettingNoReboundLabel".Translate(), ref noRebound,
+        listingStandard.CheckboxLabeled("ProjectileInversionSettingNoReboundLabel".Translate(), ref NoRebound,
             "ProjectileInversionSettingNoReboundDesc".Translate());
-        listing_Standard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref addTrait,
+        listingStandard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref AddTrait,
             "ProjectileInversionSettingAutoTraitDesc".Translate());
-        listing_Standard.CheckboxLabeled("ProjectileInversionSettingUncapManipulationLabel".Translate(),
-            ref uncapManipulation,
+        listingStandard.CheckboxLabeled("ProjectileInversionSettingUncapManipulationLabel".Translate(),
+            ref UncapManipulation,
             "ProjectileInversionSettingUncapManipulationDesc".Translate());
-        listing_Standard.Label("ProjectileInversionSettingLevelToTriggerLabel".Translate(levelToTrigger), -1f,
+        listingStandard.Label("ProjectileInversionSettingLevelToTriggerLabel".Translate(LevelToTrigger), -1f,
             "ProjectileInversionSettingLevelToTriggerDesc".Translate());
-        listing_Standard.IntAdjuster(ref levelToTrigger, 1, 1);
-        if (levelToTrigger > 20 && !StartUp.UnlimitedSkillPossible)
+        listingStandard.IntAdjuster(ref LevelToTrigger, 1, 1);
+        if (LevelToTrigger > 20 && !StartUp.UnlimitedSkillPossible)
         {
-            levelToTrigger = 20;
+            LevelToTrigger = 20;
         }
 
-        listing_Standard.Gap();
-        listing_Standard.Label("ProjectileInversionSettingWeaponDamageLabel".Translate(weaponDamage));
-        listing_Standard.IntAdjuster(ref weaponDamage, 1);
-        listing_Standard.Gap();
-        listing_Standard.Label("ProjectileInversionSettingBaseChanceLabel".Translate(baseChance * 100));
-        baseChance = (float)Math.Round(listing_Standard.Slider(baseChance, 0.01f, 1f), 2);
-        if (currentVersion != null)
+        listingStandard.Gap();
+        listingStandard.Label("ProjectileInversionSettingWeaponDamageLabel".Translate(WeaponDamage));
+        listingStandard.IntAdjuster(ref WeaponDamage, 1);
+        listingStandard.Gap();
+        listingStandard.Label("ProjectileInversionSettingBaseChanceLabel".Translate(BaseChance * 100));
+        BaseChance = (float)Math.Round(listingStandard.Slider(BaseChance, 0.01f, 1f), 2);
+        if (CurrentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("ProjectileInversionSettingCurrentModVersionLabel".Translate(currentVersion));
+            listingStandard.Label("ProjectileInversionSettingCurrentModVersionLabel".Translate(CurrentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 
     public override void ExposeData()
     {
-        Scribe_Values.Look(ref levelToTrigger, "PILevelToTrigger", 20);
-        Scribe_Values.Look(ref speed, "PISpeed", 200);
-        Scribe_Values.Look(ref showText, "PIShowText", true);
-        Scribe_Values.Look(ref addTrait, "PIAddTrait", true);
-        Scribe_Values.Look(ref noRebound, "PINoRebound");
-        Scribe_Values.Look(ref uncapManipulation, "uncapManipulation");
-        Scribe_Values.Look(ref weaponDamage, "PIWeaponDamage", 1);
-        Scribe_Values.Look(ref baseChance, "PIBaseChance", 0.5f);
+        Scribe_Values.Look(ref LevelToTrigger, "PILevelToTrigger", 20);
+        Scribe_Values.Look(ref Speed, "PISpeed", 200);
+        Scribe_Values.Look(ref ShowText, "PIShowText", true);
+        Scribe_Values.Look(ref AddTrait, "PIAddTrait", true);
+        Scribe_Values.Look(ref NoRebound, "PINoRebound");
+        Scribe_Values.Look(ref UncapManipulation, "uncapManipulation");
+        Scribe_Values.Look(ref WeaponDamage, "PIWeaponDamage", 1);
+        Scribe_Values.Look(ref BaseChance, "PIBaseChance", 0.5f);
     }
 }

@@ -28,7 +28,7 @@ public static class Projectile_ImpactSomething
             return true;
         }
 
-        if (!API.canInverse(pawn, __instance))
+        if (!API.CanInverse(pawn, __instance))
         {
             return true;
         }
@@ -38,7 +38,7 @@ public static class Projectile_ImpactSomething
         FleckMaker.Static(pawn.Position, pawn.Map, FleckDefOf.ShotFlash);
         SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
         pawn.Drawer.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
-        var showText = Settings.showText;
+        var showText = Settings.ShowText;
 
         ThingWithComps thingWithComps = null;
         if (pawn.equipment?.Primary != null)
@@ -48,10 +48,10 @@ public static class Projectile_ImpactSomething
 
         pawn.skills.Learn(SkillDefOf.Melee, 200f);
         __instance.Destroy();
-        if (!Settings.noRebound && ___launcher != null && pawn.Faction.HostileTo(___launcher.Faction))
+        if (!Settings.NoRebound && ___launcher != null && pawn.Faction.HostileTo(___launcher.Faction))
         {
             var projectile = (Projectile)GenSpawn.Spawn(def, pawn.Position, pawn.Map);
-            var all = ProjectileHitFlags.All;
+            const ProjectileHitFlags all = ProjectileHitFlags.All;
             projectile.Launch(pawn, pawn.Position.ToVector3(), new LocalTargetInfo(___launcher.Position), ___launcher,
                 all, false, thingWithComps);
             if (showText)
@@ -68,7 +68,7 @@ public static class Projectile_ImpactSomething
             }
         }
 
-        API.damageWeapon(pawn);
+        API.DamageWeapon(pawn);
         return false;
     }
 }

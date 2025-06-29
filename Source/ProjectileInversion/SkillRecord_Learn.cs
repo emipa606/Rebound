@@ -9,12 +9,12 @@ public static class SkillRecord_Learn
 {
     public static void Postfix(SkillRecord __instance, ref Pawn ___pawn)
     {
-        if (!Settings.addTrait)
+        if (!Settings.AddTrait)
         {
             return;
         }
 
-        if (API.hasTrait(___pawn))
+        if (API.HasTrait(___pawn))
         {
             return;
         }
@@ -24,7 +24,7 @@ public static class SkillRecord_Learn
             return;
         }
 
-        if (__instance.GetLevel() < Settings.levelToTrigger)
+        if (__instance.GetLevel() < Settings.LevelToTrigger)
         {
             return;
         }

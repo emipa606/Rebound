@@ -5,15 +5,15 @@ namespace ProjectileInversion;
 
 public static class CEAPI
 {
-    public static bool canInverse(Pawn pawn, BulletCE p)
+    public static bool CanInverse(Pawn pawn, BulletCE p)
     {
-        var result = API.checkPawnInverseChance(pawn) && checkProjectileInversion(p);
+        var result = API.CheckPawnInverseChance(pawn) && checkProjectileInversion(p);
         return result;
     }
 
     private static bool isProjectileTooFast(BulletCE p)
     {
-        return p.def.projectile.speed >= Settings.speed;
+        return p.def.projectile.speed >= Settings.Speed;
     }
 
     private static bool checkProjectileInversion(BulletCE p)

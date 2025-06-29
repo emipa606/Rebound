@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Master of Blade -->
+  <ProjectileInversion_Trait.degreeDatas.Master_of_Blade.label>Master of Blade</ProjectileInversion_Trait.degreeDatas.Master_of_Blade.label>
+  <!-- EN: [PAWN_nameDef] has the ability to rebound projectiles. -->
+  <ProjectileInversion_Trait.degreeDatas.Master_of_Blade.description>[PAWN_nameDef] has the ability to rebound projectiles.</ProjectileInversion_Trait.degreeDatas.Master_of_Blade.description>
+</LanguageData>

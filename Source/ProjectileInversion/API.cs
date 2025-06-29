@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -7,13 +6,13 @@ namespace ProjectileInversion;
 
 public static class API
 {
-    public static bool canInverse(Pawn pawn, Projectile p)
+    public static bool CanInverse(Pawn pawn, Projectile p)
     {
-        var result = checkPawnInverseChance(pawn) && checkProjectileInversion(p);
+        var result = CheckPawnInverseChance(pawn) && checkProjectileInversion(p);
         return result;
     }
 
-    public static void damageWeapon(Pawn pawn)
+    public static void DamageWeapon(Pawn pawn)
     {
         if (!hasWeapon(pawn))
         {
@@ -27,7 +26,7 @@ public static class API
 
         var primary = pawn.equipment.Primary;
         var hitPoints = primary.HitPoints;
-        primary.HitPoints = hitPoints - Settings.weaponDamage;
+        primary.HitPoints = hitPoints - Settings.WeaponDamage;
     }
 
     private static bool hasWeapon(Pawn pawn)
@@ -43,19 +42,19 @@ public static class API
         return num <= chance * 100f;
     }
 
-    public static bool hasTrait(Pawn pawn)
+    public static bool HasTrait(Pawn pawn)
     {
         return StartUp.ValidTraitDefs.Any(pawn.story.traits.HasTrait);
     }
 
-    public static bool checkPawnInverseChance(Pawn pawn)
+    public static bool CheckPawnInverseChance(Pawn pawn)
     {
         if (pawn.IsColonist && !pawn.Drafted)
         {
             return false;
         }
 
-        if (!hasTrait(pawn))
+        if (!HasTrait(pawn))
         {
             return false;
         }
@@ -72,12 +71,12 @@ public static class API
 
         var num = (float)pawn.skills.GetSkill(SkillDefOf.Melee).levelInt;
         var num2 = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation);
-        if (num2 > 1f && !Settings.uncapManipulation)
+        if (num2 > 1f && !Settings.UncapManipulation)
         {
             num2 = 1f;
         }
 
-        var chance = Settings.baseChance * num2 * (num / 10f);
+        var chance = Settings.BaseChance * num2 * (num / 10f);
         return randomCheck(chance);
     }
 
@@ -98,19 +97,9 @@ public static class API
         return result;
     }
 
-    private static bool isVanillaProjectile(Projectile p)
-    {
-        return new List<Type>
-        {
-            typeof(Bullet),
-            typeof(Projectile_Explosive),
-            typeof(Projectile_DoomsdayRocket)
-        }.Contains(p.GetType());
-    }
-
     private static bool isProjectileTooFast(Projectile p)
     {
-        return p.def.projectile.speed >= Settings.speed;
+        return p.def.projectile.speed >= Settings.Speed;
     }
 
     private static bool checkProjectileInversion(Projectile p)

@@ -30,7 +30,7 @@ public static class BulletCE_Impact
             return true;
         }
 
-        if (!CEAPI.canInverse(pawn, __instance))
+        if (!CEAPI.CanInverse(pawn, __instance))
         {
             return true;
         }
@@ -40,10 +40,10 @@ public static class BulletCE_Impact
         SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
         var value2 = Traverse.Create(pawn).Field("drawer").GetValue<Pawn_DrawTracker>();
         value2.Notify_DamageDeflected(new DamageInfo(__instance.def.projectile.damageDef, 1f));
-        var showText = Settings.showText;
+        var showText = Settings.ShowText;
 
         pawn.skills.Learn(SkillDefOf.Melee, 200f);
-        if (!Settings.noRebound && ___launcher != null && pawn.Faction.HostileTo(___launcher.Faction))
+        if (!Settings.NoRebound && ___launcher != null && pawn.Faction.HostileTo(___launcher.Faction))
         {
             ___intendedTarget = ___launcher;
             ___launcher = hitThing;
@@ -67,7 +67,7 @@ public static class BulletCE_Impact
             }
         }
 
-        API.damageWeapon(pawn);
+        API.DamageWeapon(pawn);
         return false;
     }
 }
