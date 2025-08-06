@@ -12,6 +12,21 @@ public static class API
         return result;
     }
 
+    public static bool ValidPawn(Pawn pawn)
+    {
+        if (pawn.RaceProps.IsMechanoid)
+        {
+            return false;
+        }
+
+        if (pawn.IsAnimal)
+        {
+            return false;
+        }
+
+        return !pawn.RaceProps.Insect;
+    }
+
     public static void DamageWeapon(Pawn pawn)
     {
         if (!hasWeapon(pawn))

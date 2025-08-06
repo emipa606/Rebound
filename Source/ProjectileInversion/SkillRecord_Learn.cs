@@ -14,6 +14,11 @@ public static class SkillRecord_Learn
             return;
         }
 
+        if (!API.ValidPawn(___pawn))
+        {
+            return;
+        }
+
         if (API.HasTrait(___pawn))
         {
             return;

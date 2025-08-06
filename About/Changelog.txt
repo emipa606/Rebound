@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.6.1 - Now checks if the pawn is valid before adding trait/skill
+
+
 1.6.0 - Mod updated for 1.6 and passed autotests
 
 

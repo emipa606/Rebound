@@ -4,6 +4,12 @@
   "CanRemove": "2",
   "PreviewVersion": "1.6",
   "SocialImageSet": true,
-  "LastXmlCleaning": "2025-06-29T15:39:48.0228613+02:00",
-  "SearchTags": " rebound chance"
+  "LastXmlCleaning": "2025-08-06T15:58:18.616172+02:00",
+  "SearchTags": " rebound chance",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 15951,
+  "LinesOfXML": 719,
+  "CodeBaseSize": 66
 }
