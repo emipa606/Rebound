@@ -1,6 +1,6 @@
 # [Rebound (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2068326756)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of AKreedz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1692393812
@@ -25,9 +25,9 @@ A brief explanation of the mod as I understand it:
 - Any trait can be a rebound-trait by adding a mod-extension to it
 - Added setting to change the level where the trait is learned. Supports mods that increases the max-level of skills.
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 For those who came in due to the steam name being in english, but no english description, here is a google translate for you. (By Umbreonic Wizard )
 
@@ -47,13 +47,13 @@ Every time the damaged weapon is lowered 1 Durable
 Weapons are automatically thrown to the ground when they reach 1
 
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -61,4 +61,4 @@ Weapons are automatically thrown to the ground when they reach 1
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/Rebound?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756) | tags:  rebound chance
+[![Image](https://img.shields.io/github/v/release/emipa606/Rebound?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2068326756) | tags: rebound chance

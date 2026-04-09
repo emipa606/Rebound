@@ -24,6 +24,11 @@ public static class API
             return false;
         }
 
+        if (pawn.def.thingClass.Name.Contains("Fortified."))
+        {
+            return false;
+        }
+
         return !pawn.RaceProps.Insect;
     }
 

@@ -1,5 +1,8 @@
 # Changelog for Rebound
 
+1.6.2 - Ignores any mech-pawn from DMS, I think
+
+
 1.6.1 - Now checks if the pawn is valid before adding trait/skill
 
 
