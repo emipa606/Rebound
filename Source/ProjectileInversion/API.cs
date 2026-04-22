@@ -74,6 +74,11 @@ public static class API
             return false;
         }
 
+        if (Settings.DisableWhenInMelee && pawn.mindState?.meleeThreat != null)
+        {
+            return false;
+        }
+
         if (!HasTrait(pawn))
         {
             return false;

@@ -20,4 +20,6 @@
   <ProjectileInversionSettingLevelToTriggerDesc>Уровень навыка, при котором пешки должны получить этот признак. Может быть установлен выше 20, если загружен поддерживаемый мод.</ProjectileInversionSettingLevelToTriggerDesc>
   <ProjectileInversionSettingUncapManipulationLabel>Расчет манипуляций без привязки</ProjectileInversionSettingUncapManipulationLabel>
   <ProjectileInversionSettingUncapManipulationDesc>Обычно при вычислениях манипуляций накидывается 100%, включите эту настройку, чтобы игнорировать это.</ProjectileInversionSettingUncapManipulationDesc>
+  <ProjectileInversionSettingDisableWhenInMeleeLabel>Отключить отскок во время ближнего боя</ProjectileInversionSettingDisableWhenInMeleeLabel>
+  <ProjectileInversionSettingDisableWhenInMeleeDesc>Если верно, пешки не могут отскакивать от снарядов, пока активно взаимодействуют с угрозой ближнего боя.</ProjectileInversionSettingDisableWhenInMeleeDesc>
 </LanguageData>

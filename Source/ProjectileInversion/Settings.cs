@@ -11,6 +11,7 @@ public class Settings : ModSettings
     public static bool ShowText = true;
     public static bool NoRebound;
     public static bool AddTrait = true;
+    public static bool DisableWhenInMelee;
     public static string CurrentVersion;
     public static int WeaponDamage = 1;
     public static int LevelToTrigger = 20;
@@ -28,6 +29,9 @@ public class Settings : ModSettings
             "ProjectileInversionSettingShowTextDesc".Translate());
         listingStandard.CheckboxLabeled("ProjectileInversionSettingNoReboundLabel".Translate(), ref NoRebound,
             "ProjectileInversionSettingNoReboundDesc".Translate());
+        listingStandard.CheckboxLabeled("ProjectileInversionSettingDisableWhenInMeleeLabel".Translate(),
+            ref DisableWhenInMelee,
+            "ProjectileInversionSettingDisableWhenInMeleeDesc".Translate());
         listingStandard.CheckboxLabeled("ProjectileInversionSettingAutoTraitLabel".Translate(), ref AddTrait,
             "ProjectileInversionSettingAutoTraitDesc".Translate());
         listingStandard.CheckboxLabeled("ProjectileInversionSettingUncapManipulationLabel".Translate(),
@@ -65,6 +69,7 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref ShowText, "PIShowText", true);
         Scribe_Values.Look(ref AddTrait, "PIAddTrait", true);
         Scribe_Values.Look(ref NoRebound, "PINoRebound");
+        Scribe_Values.Look(ref DisableWhenInMelee, "PIDisableWhenInMelee");
         Scribe_Values.Look(ref UncapManipulation, "uncapManipulation");
         Scribe_Values.Look(ref WeaponDamage, "PIWeaponDamage", 1);
         Scribe_Values.Look(ref BaseChance, "PIBaseChance", 0.5f);

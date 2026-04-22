@@ -20,4 +20,6 @@
   <ProjectileInversionSettingLevelToTriggerDesc>Le niveau de compétence auquel les pions doivent obtenir le trait. Peut être supérieur à 20 si un mod supporté est chargé.</ProjectileInversionSettingLevelToTriggerDesc>
   <ProjectileInversionSettingUncapManipulationLabel>Calcul de la manipulation non plafonnée</ProjectileInversionSettingUncapManipulationLabel>
   <ProjectileInversionSettingUncapManipulationDesc>Normalement, les calculs de manipulation sont plafonnés à 100 % ; activez ce paramètre pour l'ignorer.</ProjectileInversionSettingUncapManipulationDesc>
+  <ProjectileInversionSettingDisableWhenInMeleeLabel>Désactiver le rebond en combat de mêlée</ProjectileInversionSettingDisableWhenInMeleeLabel>
+  <ProjectileInversionSettingDisableWhenInMeleeDesc>Si vrai, les pions ne peuvent pas faire rebondir les projectiles lorsqu'ils sont activement engagés avec une menace en mêlée.</ProjectileInversionSettingDisableWhenInMeleeDesc>
 </LanguageData>

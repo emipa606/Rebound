@@ -1,44 +1,57 @@
 # GitHub Copilot Instructions for Rebound (Continued) Mod
 
 ## Mod Overview and Purpose
-
-**Rebound (Continued)** is an update to the original mod by AKreedz, introducing enhanced combat mechanics in RimWorld. Its primary aim is to add a dynamic melee-oriented trait enabling bullet rebound mechanics to spice up combat engagements. This mod is designed for players who want to enhance the tactical aspect of battles by incorporating unique skills and mechanics related to melee proficiency.
+The **Rebound (Continued)** mod revamps and enhances the original mod by AKreedz, introducing new dynamics and improvements in melee combat for RimWorld. The core feature of this mod is enabling pawns to rebound hostile projectiles using melee weapons, providing a tactical advantage in combat.
 
 ## Key Features and Systems
+- **Sword Master Trait**: 
+  - A new trait automatically gained when a pawn reaches a melee skill of 20, although this auto-assignment can be disabled in settings. The trait can also have a random low chance of appearing naturally.
+  - Any trait can become a rebound-focused trait through mod extensions.
 
-- **New Trait: Sword Master**: This rare trait is automatically granted to pawns with a melee skill level of 20 unless disabled via settings. It can also be learned at lower levels if the settings are adjusted.
-- **Bullet Rebound Mechanic**: Grants drafted player pawns with melee weapons the chance to rebound projectiles based on their melee skill and manipulation ability. This chance is calculated as `0.5 * (Melee-skill / 10)`.
-- **Weapon Durability Mechanic**: Weapons utilized for rebounding tend to wear out. The durability damage probability is calculated as `0.4 / (Melee-skill/5)`. Weapons will be dropped if their durability reaches critical levels (1 durability point) to prevent destruction.
-- **Projectile Speed Limit**: Fast-moving projectiles cannot be rebounded. This threshold can be customized via mod settings.
-- **Enhanced Customization**: 
-  - Settings to enable simple projectile blocking.
-  - Options to alter weapon damage probability, base rebound chance, and the level at which the trait is acquired.
-  - Compatibility with mods that increase melee skill level caps.
-- **Broader Trait Integration**: Any trait can serve as a rebound trait with the addition of a mod extension.
-- **Combat Extended Support**: Integrates seamlessly with Combat Extended (CE).
-- **Localization**: Includes Traditional Chinese translation.
+- **Projectile Rebounding**:
+  - Bullets can be rebounded if the pawn is drafted and holding a melee weapon.
+  - Rebound chance formula: `0.5 * (Melee-skill / 10)`.
+  - Configurable speed limit for projectiles to be eligible for rebounding.
+  - A new setting allows projectiles to be blocked instead of rebounded.
+  - A new setting can disable rebound while the pawn is actively engaged in melee combat.
+
+- **Weapon Durability System**:
+  - When rebounding, melee weapons incur durability damage calculated as: `0.4 / (Melee-skill / 5)`.
+  - Weapons drop when durability reaches 1 to prevent destruction.
+  - Adjustable settings for weapon damage and base rebound chance.
+
+- **Settings and Mod Compatibility**:
+  - Supports Combat Extended (CE) mod.
+  - Integration features include support for custom trait extensions and adaptable skill level conditions.
+  - Allows for localization with Traditional Chinese translation.
 
 ## Coding Patterns and Conventions
-
-- **Naming Conventions**: Classes and methods utilize PascalCase, presented alongside well-defined, descriptive names.
-- **Static Classes**: Frequently used for utility or helper functions, as seen in `BulletCE_Impact`, `CERebound`, and `Projectile_ImpactSomething`.
-- **Modular Design**: Code is structured into specific classes dedicated to distinct functionalities, such as `Settings`, `PIMod`, and `StartUp`.
+- **Class Organization**: Files like `API.cs` and `Settings.cs` are used for configuration and API interactions, promoting modularity.
+- **Static Classes**: Utilized for functionality that doesn't need instance states, e.g., `CERebound` and `Projectile_ImpactSomething`.
+- **Mod Extensions**: The use of `DefModExtension` in `ProjectileInversion_ModExtension.cs` expands def capabilities, which eases integration with XML-based mod settings.
 
 ## XML Integration
-
-- **DefModExtension**: Uses `ProjectileInversion_ModExtension` to augment existing definitions (Defs) with additional functionalities specific to projectile inversion mechanics.
-- **XML Data**: Supports dynamic integration with XML, allowing traits and skills to be tailored or supplemented via XML configurations.
+- **DefModExtension**: Extend trait properties via XML to allow more dynamic and modular gameplay trait specifications, enabling custom rebound traits.
+- **Settings Management**: XML files are utilized to configure default behaviors and option toggles, making it user-friendly to adjust mechanics from the settings menu.
 
 ## Harmony Patching
-
-Harmony is employed to patch original RimWorld methods to either enhance or replace default behaviors, such as in altering the projectile combat mechanics or integrating new skill levels for traits.
+- **Harmony Library**: Used for method patching to safely alter game behavior without directly modifying original game code.
+- **Consistent Patches**: Organized in related class files ensuring separation of concern, e.g., `SkillRecord_Learn` and `Projectile_ImpactSomething`.
 
 ## Suggestions for Copilot
+1. **Code Completion and Helper Functions**: Utilize Copilot to suggest boilerplate code or helper functions, such as for calculating projectile speeds or handling weapon durability.
+2. **Error Checking and Validation**: Automatically generate validation checks for settings, ensuring user-induced errors are minimized.
+3. **Refactoring Guidance**: Leverage Copilot to identify redundant or inefficient code segments, suggesting more optimal coding patterns.
+4. **XML Templates**: Suggest XML templates for setting up new mod extensions and trait definitions.
+5. **Harmony Patch Suggestions**: Recommend potential methods that may require patching and propose starting templates for Harmony patches.
 
-- **Optimize Algorithm Calculations**: Ensure calculations, especially for rebound chance and weapon durability, are not overly complex or redundant.
-- **Code Refactoring**: Encourage creating methods for repeated logic in order to keep codebase DRY.
-- **Error Handling**: Implement comprehensive exception handling, especially for settings adjustments and Harmony patches, to prevent game-breaking bugs.
-- **Ensure Compatibility**: Provide suggestions on how to check compatibility with other popular mods and potential clashing gameplay mechanics.
-- **Customization Options**: Generate configurable settings allowing users to modify the mod behavior according to their gameplay preferences.
+By adhering to these structured guidelines and using the power of Copilot, development and maintenance of the **Rebound (Continued)** mod can be efficiently managed, ensuring a consistent and feature-rich user experience.
 
-This set of guidelines should help optimize Copilot-assisted code suggestions for the ongoing development and maintenance of the Rebound (Continued) mod.
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+

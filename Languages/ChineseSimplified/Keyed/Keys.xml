@@ -20,4 +20,6 @@
   <ProjectileInversionSettingLevelToTriggerDesc>卒子应该获得该特性的技能等级。如果加载了支持的mod，可以设置为高于20。</ProjectileInversionSettingLevelToTriggerDesc>
   <ProjectileInversionSettingUncapManipulationLabel>无上限操纵计算</ProjectileInversionSettingUncapManipulationLabel>
   <ProjectileInversionSettingUncapManipulationDesc>通常情况下，操作计算的上限为 100%，启用此设置可忽略这一点。</ProjectileInversionSettingUncapManipulationDesc>
+  <ProjectileInversionSettingDisableWhenInMeleeLabel>近战时禁用反弹</ProjectileInversionSettingDisableWhenInMeleeLabel>
+  <ProjectileInversionSettingDisableWhenInMeleeDesc>如果为真，则小兵在与近战威胁交战时无法反弹弹丸。</ProjectileInversionSettingDisableWhenInMeleeDesc>
 </LanguageData>

@@ -1,5 +1,9 @@
 # Changelog for Rebound
 
+1.6.3 - Added mod-option to disable the rebound chance when in melee combat
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.6.2 - Ignores any mech-pawn from DMS, I think
 
 
